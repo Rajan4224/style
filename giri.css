@@ -1,0 +1,235 @@
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.giri-serif{font-family:serif}.giri-sans-serif{font-family:sans-serif}.giri-cursive{font-family:cursive}.giri-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.giri-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.giri-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.giri-table,.giri-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.giri-table-all{border:1px solid #ccc}
+.giri-bordered tr,.giri-table-all tr{border-bottom:1px solid #ddd}.giri-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.giri-table-all tr:nth-child(odd){background-color:#fff}.giri-table-all tr:nth-child(even){background-color:#f1f1f1}
+.giri-hoverable tbody tr:hover,.giri-ul.giri-hoverable li:hover{background-color:#ccc}.giri-centered tr th,.giri-centered tr td{text-align:center}
+.giri-table td,.giri-table th,.giri-table-all td,.giri-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.giri-table th:first-child,.giri-table td:first-child,.giri-table-all th:first-child,.giri-table-all td:first-child{padding-left:16px}
+.giri-btn,.giri-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.giri-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.giri-btn,.giri-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.giri-disabled,.giri-btn:disabled,.giri-button:disabled{cursor:not-allowed;opacity:0.3}.giri-disabled *,:disabled *{pointer-events:none}
+.giri-btn.giri-disabled:hover,.giri-btn:disabled:hover{box-shadow:none}
+.giri-badge,.giri-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.giri-badge{border-radius:50%}
+.giri-ul{list-style-type:none;padding:0;margin:0}.giri-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.giri-ul li:last-child{border-bottom:none}
+.giri-tooltip,.giri-display-container{position:relative}.giri-tooltip .giri-text{display:none}.giri-tooltip:hover .giri-text{display:inline-block}
+.giri-ripple:active{opacity:0.5}.giri-ripple{transition:opacity 0s}
+.giri-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.giri-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.giri-dropdown-click,.giri-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.giri-dropdown-hover:hover .giri-dropdown-content{display:block}
+.giri-dropdown-hover:first-child,.giri-dropdown-click:hover{background-color:#ccc;color:#000}
+.giri-dropdown-hover:hover > .giri-button:first-child,.giri-dropdown-click:hover > .giri-button:first-child{background-color:#ccc;color:#000}
+.giri-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.giri-check,.giri-radio{width:24px;height:24px;position:relative;top:6px}
+.giri-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.giri-bar-block .giri-dropdown-hover,.giri-bar-block .giri-dropdown-click{width:100%}
+.giri-bar-block .giri-dropdown-hover .giri-dropdown-content,.giri-bar-block .giri-dropdown-click .giri-dropdown-content{min-width:100%}
+.giri-bar-block .giri-dropdown-hover .giri-button,.giri-bar-block .giri-dropdown-click .giri-button{width:100%;text-align:left;padding:8px 16px}
+.giri-main,#main{transition:margin-left .4s}
+.giri-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.giri-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.giri-bar{width:100%;overflow:hidden}.giri-center .giri-bar{display:inline-block;width:auto}
+.giri-bar .giri-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.giri-bar .giri-dropdown-hover,.giri-bar .giri-dropdown-click{position:static;float:left}
+.giri-bar .giri-button{white-space:normal}
+.giri-bar-block .giri-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.giri-bar-block.giri-center .giri-bar-item{text-align:center}.giri-block{display:block;width:100%}
+.giri-responsive{display:block;overflow-x:auto}
+.giri-container:after,.giri-container:before,.giri-panel:after,.giri-panel:before,.giri-row:after,.giri-row:before,.giri-row-padding:after,.giri-row-padding:before,
+.giri-cell-row:before,.giri-cell-row:after,.giri-clear:after,.giri-clear:before,.giri-bar:before,.giri-bar:after{content:"";display:table;clear:both}
+.giri-col,.giri-half,.giri-third,.giri-twothird,.giri-threequarter,.giri-quarter{float:left;width:100%}
+.giri-col.s1{width:8.33333%}.giri-col.s2{width:16.66666%}.giri-col.s3{width:24.99999%}.giri-col.s4{width:33.33333%}
+.giri-col.s5{width:41.66666%}.giri-col.s6{width:49.99999%}.giri-col.s7{width:58.33333%}.giri-col.s8{width:66.66666%}
+.giri-col.s9{width:74.99999%}.giri-col.s10{width:83.33333%}.giri-col.s11{width:91.66666%}.giri-col.s12{width:99.99999%}
+@media (min-width:601px){.giri-col.m1{width:8.33333%}.giri-col.m2{width:16.66666%}.giri-col.m3,.giri-quarter{width:24.99999%}.giri-col.m4,.giri-third{width:33.33333%}
+.giri-col.m5{width:41.66666%}.giri-col.m6,.giri-half{width:49.99999%}.giri-col.m7{width:58.33333%}.giri-col.m8,.giri-twothird{width:66.66666%}
+.giri-col.m9,.giri-threequarter{width:74.99999%}.giri-col.m10{width:83.33333%}.giri-col.m11{width:91.66666%}.giri-col.m12{width:99.99999%}}
+@media (min-width:993px){.giri-col.l1{width:8.33333%}.giri-col.l2{width:16.66666%}.giri-col.l3{width:24.99999%}.giri-col.l4{width:33.33333%}
+.giri-col.l5{width:41.66666%}.giri-col.l6{width:49.99999%}.giri-col.l7{width:58.33333%}.giri-col.l8{width:66.66666%}
+.giri-col.l9{width:74.99999%}.giri-col.l10{width:83.33333%}.giri-col.l11{width:91.66666%}.giri-col.l12{width:99.99999%}}
+.giri-rest{overflow:hidden}.giri-stretch{margin-left:-16px;margin-right:-16px}
+.giri-content,.giri-auto{margin-left:auto;margin-right:auto}.giri-content{max-width:980px}.giri-auto{max-width:1140px}
+.giri-cell-row{display:table;width:100%}.giri-cell{display:table-cell}
+.giri-cell-top{vertical-align:top}.giri-cell-middle{vertical-align:middle}.giri-cell-bottom{vertical-align:bottom}
+.giri-hide{display:none!important}.giri-show-block,.giri-show{display:block!important}.giri-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.giri-auto{max-width:95%}}
+@media (max-width:600px){.giri-modal-content{margin:0 10px;width:auto!important}.giri-modal{padding-top:30px}
+.giri-dropdown-hover.giri-mobile .giri-dropdown-content,.giri-dropdown-click.giri-mobile .giri-dropdown-content{position:relative}	
+.giri-hide-small{display:none!important}.giri-mobile{display:block;width:100%!important}.giri-bar-item.giri-mobile,.giri-dropdown-hover.giri-mobile,.giri-dropdown-click.giri-mobile{text-align:center}
+.giri-dropdown-hover.giri-mobile,.giri-dropdown-hover.giri-mobile .giri-btn,.giri-dropdown-hover.giri-mobile .giri-button,.giri-dropdown-click.giri-mobile,.giri-dropdown-click.giri-mobile .giri-btn,.giri-dropdown-click.giri-mobile .giri-button{width:100%}}
+@media (max-width:768px){.giri-modal-content{width:500px}.giri-modal{padding-top:50px}}
+@media (min-width:993px){.giri-modal-content{width:900px}.giri-hide-large{display:none!important}.giri-sidebar.giri-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.giri-hide-medium{display:none!important}}
+@media (max-width:992px){.giri-sidebar.giri-collapse{display:none}.giri-main{margin-left:0!important;margin-right:0!important}.giri-auto{max-width:100%}}
+.giri-top,.giri-bottom{position:fixed;width:100%;z-index:1}.giri-top{top:0}.giri-bottom{bottom:0}
+.giri-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.giri-display-topleft{position:absolute;left:0;top:0}.giri-display-topright{position:absolute;right:0;top:0}
+.giri-display-bottomleft{position:absolute;left:0;bottom:0}.giri-display-bottomright{position:absolute;right:0;bottom:0}
+.giri-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.giri-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.giri-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.giri-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.giri-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.giri-display-container:hover .giri-display-hover{display:block}.giri-display-container:hover span.giri-display-hover{display:inline-block}.giri-display-hover{display:none}
+.giri-display-position{position:absolute}
+.giri-circle{border-radius:50%}
+.giri-round-small{border-radius:2px}.giri-round,.giri-round-medium{border-radius:4px}.giri-round-large{border-radius:8px}.giri-round-xlarge{border-radius:16px}.giri-round-xxlarge{border-radius:32px}
+.giri-row-padding,.giri-row-padding>.giri-half,.giri-row-padding>.giri-third,.giri-row-padding>.giri-twothird,.giri-row-padding>.giri-threequarter,.giri-row-padding>.giri-quarter,.giri-row-padding>.giri-col{padding:0 8px}
+.giri-container,.giri-panel{padding:0.01em 16px}.giri-panel{margin-top:16px;margin-bottom:16px}
+.giri-code,.giri-codespan{font-family:Consolas,"courier new";font-size:16px}
+.giri-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.giri-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.giri-card,.giri-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.giri-card-4,.giri-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.giri-spin{animation:giri-spin 2s infinite linear}@keyframes giri-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.giri-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.giri-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.giri-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.giri-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.giri-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.giri-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.giri-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.giri-animate-input{transition:width 0.4s ease-in-out}.giri-animate-input:focus{width:100%!important}
+.giri-opacity,.giri-hover-opacity:hover{opacity:0.60}.giri-opacity-off,.giri-hover-opacity-off:hover{opacity:1}
+.giri-opacity-max{opacity:0.25}.giri-opacity-min{opacity:0.75}
+.giri-greyscale-max,.giri-grayscale-max,.giri-hover-greyscale:hover,.giri-hover-grayscale:hover{filter:grayscale(100%)}
+.giri-greyscale,.giri-grayscale{filter:grayscale(75%)}.giri-greyscale-min,.giri-grayscale-min{filter:grayscale(50%)}
+.giri-sepia{filter:sepia(75%)}.giri-sepia-max,.giri-hover-sepia:hover{filter:sepia(100%)}.giri-sepia-min{filter:sepia(50%)}
+.giri-tiny{font-size:10px!important}.giri-small{font-size:12px!important}.giri-medium{font-size:15px!important}.giri-large{font-size:18px!important}
+.giri-xlarge{font-size:24px!important}.giri-xxlarge{font-size:36px!important}.giri-xxxlarge{font-size:48px!important}.giri-jumbo{font-size:64px!important}
+.giri-left-align{text-align:left!important}.giri-right-align{text-align:right!important}.giri-justify{text-align:justify!important}.giri-center{text-align:center!important}
+.giri-border-0{border:0!important}.giri-border{border:1px solid #ccc!important}
+.giri-border-top{border-top:1px solid #ccc!important}.giri-border-bottom{border-bottom:1px solid #ccc!important}
+.giri-border-left{border-left:1px solid #ccc!important}.giri-border-right{border-right:1px solid #ccc!important}
+.giri-topbar{border-top:6px solid #ccc!important}.giri-bottombar{border-bottom:6px solid #ccc!important}
+.giri-leftbar{border-left:6px solid #ccc!important}.giri-rightbar{border-right:6px solid #ccc!important}
+.giri-section,.giri-code{margin-top:16px!important;margin-bottom:16px!important}
+.giri-margin{margin:16px!important}.giri-margin-top{margin-top:16px!important}.giri-margin-bottom{margin-bottom:16px!important}
+.giri-margin-left{margin-left:16px!important}.giri-margin-right{margin-right:16px!important}
+.giri-padding-small{padding:4px 8px!important}.giri-padding{padding:8px 16px!important}.giri-padding-large{padding:12px 24px!important}
+.giri-padding-16{padding-top:16px!important;padding-bottom:16px!important}.giri-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.giri-padding-32{padding-top:32px!important;padding-bottom:32px!important}.giri-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.giri-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.giri-padding-top-64{padding-top:64px!important}.giri-padding-top-48{padding-top:48px!important}
+.giri-padding-top-32{padding-top:32px!important}.giri-padding-top-24{padding-top:24px!important}
+.giri-left{float:left!important}.giri-right{float:right!important}
+.giri-button:hover{color:#000!important;background-color:#ccc!important}
+.giri-transparent,.giri-hover-none:hover{background-color:transparent!important}
+.giri-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.giri-amber,.giri-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.giri-aqua,.giri-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.giri-blue,.giri-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.giri-light-blue,.giri-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.giri-brown,.giri-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.giri-cyan,.giri-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.giri-blue-grey,.giri-hover-blue-grey:hover,.giri-blue-gray,.giri-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.giri-green,.giri-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.giri-light-green,.giri-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.giri-indigo,.giri-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.giri-khaki,.giri-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.giri-lime,.giri-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.giri-orange,.giri-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.giri-deep-orange,.giri-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.giri-pink,.giri-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.giri-purple,.giri-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.giri-deep-purple,.giri-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.giri-red,.giri-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.giri-sand,.giri-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.giri-teal,.giri-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.giri-yellow,.giri-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.giri-white,.giri-hover-white:hover{color:#000!important;background-color:#fff!important}
+.giri-black,.giri-hover-black:hover{color:#fff!important;background-color:#000!important}
+.giri-grey,.giri-hover-grey:hover,.giri-gray,.giri-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.giri-light-grey,.giri-hover-light-grey:hover,.giri-light-gray,.giri-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.giri-dark-grey,.giri-hover-dark-grey:hover,.giri-dark-gray,.giri-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.giri-pale-red,.giri-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.giri-pale-green,.giri-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.giri-pale-yellow,.giri-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.giri-pale-blue,.giri-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.giri-text-amber,.giri-hover-text-amber:hover{color:#ffc107!important}
+.giri-text-aqua,.giri-hover-text-aqua:hover{color:#00ffff!important}
+.giri-text-blue,.giri-hover-text-blue:hover{color:#2196F3!important}
+.giri-text-light-blue,.giri-hover-text-light-blue:hover{color:#87CEEB!important}
+.giri-text-brown,.giri-hover-text-brown:hover{color:#795548!important}
+.giri-text-cyan,.giri-hover-text-cyan:hover{color:#00bcd4!important}
+.giri-text-blue-grey,.giri-hover-text-blue-grey:hover,.giri-text-blue-gray,.giri-hover-text-blue-gray:hover{color:#607d8b!important}
+.giri-text-green,.giri-hover-text-green:hover{color:#4CAF50!important}
+.giri-text-light-green,.giri-hover-text-light-green:hover{color:#8bc34a!important}
+.giri-text-indigo,.giri-hover-text-indigo:hover{color:#3f51b5!important}
+.giri-text-khaki,.giri-hover-text-khaki:hover{color:#b4aa50!important}
+.giri-text-lime,.giri-hover-text-lime:hover{color:#cddc39!important}
+.giri-text-orange,.giri-hover-text-orange:hover{color:#ff9800!important}
+.giri-text-deep-orange,.giri-hover-text-deep-orange:hover{color:#ff5722!important}
+.giri-text-pink,.giri-hover-text-pink:hover{color:#e91e63!important}
+.giri-text-purple,.giri-hover-text-purple:hover{color:#9c27b0!important}
+.giri-text-deep-purple,.giri-hover-text-deep-purple:hover{color:#673ab7!important}
+.giri-text-red,.giri-hover-text-red:hover{color:#f44336!important}
+.giri-text-sand,.giri-hover-text-sand:hover{color:#fdf5e6!important}
+.giri-text-teal,.giri-hover-text-teal:hover{color:#009688!important}
+.giri-text-yellow,.giri-hover-text-yellow:hover{color:#d2be0e!important}
+.giri-text-white,.giri-hover-text-white:hover{color:#fff!important}
+.giri-text-black,.giri-hover-text-black:hover{color:#000!important}
+.giri-text-grey,.giri-hover-text-grey:hover,.giri-text-gray,.giri-hover-text-gray:hover{color:#757575!important}
+.giri-text-light-grey,.giri-hover-text-light-grey:hover,.giri-text-light-gray,.giri-hover-text-light-gray:hover{color:#f1f1f1!important}
+.giri-text-dark-grey,.giri-hover-text-dark-grey:hover,.giri-text-dark-gray,.giri-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.giri-border-amber,.giri-hover-border-amber:hover{border-color:#ffc107!important}
+.giri-border-aqua,.giri-hover-border-aqua:hover{border-color:#00ffff!important}
+.giri-border-blue,.giri-hover-border-blue:hover{border-color:#2196F3!important}
+.giri-border-light-blue,.giri-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.giri-border-brown,.giri-hover-border-brown:hover{border-color:#795548!important}
+.giri-border-cyan,.giri-hover-border-cyan:hover{border-color:#00bcd4!important}
+.giri-border-blue-grey,.giri-hover-border-blue-grey:hover,.giri-border-blue-gray,.giri-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.giri-border-green,.giri-hover-border-green:hover{border-color:#4CAF50!important}
+.giri-border-light-green,.giri-hover-border-light-green:hover{border-color:#8bc34a!important}
+.giri-border-indigo,.giri-hover-border-indigo:hover{border-color:#3f51b5!important}
+.giri-border-khaki,.giri-hover-border-khaki:hover{border-color:#f0e68c!important}
+.giri-border-lime,.giri-hover-border-lime:hover{border-color:#cddc39!important}
+.giri-border-orange,.giri-hover-border-orange:hover{border-color:#ff9800!important}
+.giri-border-deep-orange,.giri-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.giri-border-pink,.giri-hover-border-pink:hover{border-color:#e91e63!important}
+.giri-border-purple,.giri-hover-border-purple:hover{border-color:#9c27b0!important}
+.giri-border-deep-purple,.giri-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.giri-border-red,.giri-hover-border-red:hover{border-color:#f44336!important}
+.giri-border-sand,.giri-hover-border-sand:hover{border-color:#fdf5e6!important}
+.giri-border-teal,.giri-hover-border-teal:hover{border-color:#009688!important}
+.giri-border-yellow,.giri-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.giri-border-white,.giri-hover-border-white:hover{border-color:#fff!important}
+.giri-border-black,.giri-hover-border-black:hover{border-color:#000!important}
+.giri-border-grey,.giri-hover-border-grey:hover,.giri-border-gray,.giri-hover-border-gray:hover{border-color:#9e9e9e!important}
+.giri-border-light-grey,.giri-hover-border-light-grey:hover,.giri-border-light-gray,.giri-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.giri-border-dark-grey,.giri-hover-border-dark-grey:hover,.giri-border-dark-gray,.giri-hover-border-dark-gray:hover{border-color:#616161!important}
+.giri-border-pale-red,.giri-hover-border-pale-red:hover{border-color:#ffe7e7!important}.giri-border-pale-green,.giri-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.giri-border-pale-yellow,.giri-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.giri-border-pale-blue,.giri-hover-border-pale-blue:hover{border-color:#e7ffff!important}
