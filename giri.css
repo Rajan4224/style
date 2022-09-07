@@ -1,6 +1,6 @@
-/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
@@ -36,7 +36,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .giri-hoverable tbody tr:hover,.giri-ul.giri-hoverable li:hover{background-color:#ccc}.giri-centered tr th,.giri-centered tr td{text-align:center}
 .giri-table td,.giri-table th,.giri-table-all td,.giri-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
 .giri-table th:first-child,.giri-table td:first-child,.giri-table-all th:first-child,.giri-table-all td:first-child{padding-left:16px}
-.giri-btn,.giri-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.giri-btn,.giri-button{border:none;display:inline-block;padding:10px 20px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .giri-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .giri-btn,.giri-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
 .giri-disabled,.giri-btn:disabled,.giri-button:disabled{cursor:not-allowed;opacity:0.3}.giri-disabled *,:disabled *{pointer-events:none}
